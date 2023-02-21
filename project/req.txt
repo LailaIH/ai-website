@@ -1,0 +1,14 @@
+cassandra-driver
+cryptography
+gunicorn
+jupyter
+pandas
+pypyr
+python-dotenv
+tensorflow
+uvicorn
+boto3
+asgiref==3.5.2
+Django==4.1
+sqlparse==0.4.2
+tzdata==2022.2
