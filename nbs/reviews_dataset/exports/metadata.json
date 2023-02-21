@@ -1,0 +1,12 @@
+{
+    "labels_legend_inverted": {
+        "1": "positive",
+        "0": "negative"
+    },
+    "legend": {
+        "positive": 1,
+        "negative": 0
+    },
+    "max_sequence": 300,
+    "max_words": 280
+}

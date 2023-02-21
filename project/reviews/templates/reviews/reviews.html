@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+
+{% block body %}
+
+        <div class="apply_job_form white-bg">
+            <h4>Edit Profile</h4>
+            <form  method = 'post' enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                {% bootstrap_form form %}
+                {% buttons %}
+                <button class="boxed-btn3 w-100" type="submit">Post Now</button>
+                {% endbuttons %}
+                
+                
+            </form>
+            <h4>{{final}}</h4>
+        </div>
+
+{% endblock body %}
