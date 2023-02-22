@@ -1,7 +1,7 @@
 FROM codingforentrepreneurs/python:3.9-webapp-cassandra
 
 COPY ./reviews  /reviews/reviews
-COPY ./req  /reviews/req.txt
+COPY ./req.txt  /reviews/req.txt
 
 WORKDIR /app
 
