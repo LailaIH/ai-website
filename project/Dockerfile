@@ -5,6 +5,7 @@ COPY ./req.txt  /reviews/req.txt
 COPY .env  /reviews/.env
 COPY ./entrypoint.sh  /reviews/entrypoint.sh
 COPY ./exports /reviews/models
+COPY ./pipelines /reviews/pipelines/
 
 WORKDIR /reviews
 
