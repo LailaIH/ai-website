@@ -12,6 +12,7 @@ WORKDIR /reviews
 RUN chmod +x entrypoint.sh
 
 RUN python3 -m venv /opt/venv && /opt/venv/bin/python -m pip install -r req.txt
+RUN /opt/venv/bin/python -m pypyr /reviews/piplines/decrypt
 
 CMD [ "entrypoint.sh" ]
  
