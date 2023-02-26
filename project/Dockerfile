@@ -4,7 +4,7 @@ COPY ./reviews  /reviews/reviews
 COPY ./req.txt  /reviews/req.txt
 COPY .env  /reviews/.env
 COPY ./entrypoint.sh  /reviews/entrypoint.sh
-COPY ./../nbs/reviews_dataset/exports reviews/models
+COPY C:\Users\hp\Desktop\blog\nbs\reviews_dataset\exports reviews/models
 
 WORKDIR /reviews
 
