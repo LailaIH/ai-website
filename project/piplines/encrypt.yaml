@@ -1,0 +1,14 @@
+steps:
+  - name: pypyr.steps.pyimport
+    in:
+      pyImport: |
+        from review import encrypt
+  - name: pypyr.steps.set
+    in:
+      set:
+        toEncrypt:
+          - input_dir: reviews/ignored
+            output_dir: reviews/encrypted
+  - name: pypyr.steps.py
+    run: !py encrypt.encrypt_dir(i["input_dir"], i["output_dir"])
+    foreach: "{toEncrypt}"
