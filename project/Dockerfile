@@ -4,7 +4,7 @@ COPY ./reviews  /reviews/reviews
 COPY ./req.txt  /reviews/req.txt
 COPY .env  /reviews/.env
 COPY ./entrypoint.sh  /reviews/entrypoint.sh
-COPY ../blog/nbs/reviews_dataset/exports reviews/models
+COPY ./exports /reviews/models
 
 WORKDIR /reviews
 
