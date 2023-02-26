@@ -3,7 +3,7 @@ FROM codingforentrepreneurs/python:3.9-webapp-cassandra
 COPY ./reviews  /reviews/reviews
 COPY ./req.txt  /reviews/req.txt
 COPY .env  /reviews/.env
-COPY .entrypoint.sh  /reviews/entrypoint.sh
+COPY ./entrypoint.sh  /reviews/entrypoint.sh
 
 WORKDIR /reviews
 
